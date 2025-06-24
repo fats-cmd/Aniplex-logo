@@ -52,7 +52,7 @@ themeButtons.forEach((btn) => {
       "theme-green",
       "theme-red",
       "theme-orange",
-      "theme=mono",
+      "theme-mono",
       "theme-cyber",
       "theme-sunset",
       "theme-mint",
