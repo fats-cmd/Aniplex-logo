@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Aniplex Animation</title>
+  </head>
+  <body>
+    <!-- Image to be referenced -->
+    <img
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2620/Aniplex-Logo.jpg"
+    />
+    <!-- Letters to be animated -->
+    <div class="container">
+      <p class="aniplex">
+        <span class="a">A</span>
+        <span class="n">N</span>
+        <span class="i">I</span>
+        <span class="p">P</span>
+        <span class="l">L</span>
+        <span class="e">E</span>
+        <span class="x">X</span>
+      </p>
+
+      <button type="button" class="start-animation-button"></button>
+
+      <!-- Accessibility menu toggle button -->
+      <button
+        class="accessibility-toggle"
+        aria-label="Toggle Accessibility Menu"
+      >
+        <span>&#9881;</span>
+      </button>
+      <!-- Accessibility menu -->
+      <div class="accessibility-menu" aria-label="Accessibility Menu">
+        <div class="accessibility-container-flex">
+          <h3>Themes</h3>
+          <div class="theme-grid">
+            <button class="theme-btn" data-theme="theme-default">
+              Default
+            </button>
+            <button class="theme-btn" data-theme="theme-dark">Dark</button>
+            <button class="theme-btn" data-theme="theme-high-contrast">
+              High Contrast
+            </button>
+            <button class="theme-btn" data-theme="theme-pastel">Pastel</button>
+            <button class="theme-btn" data-theme="theme-blue">Blue</button>
+            <button class="theme-btn" data-theme="theme-green">Green</button>
+            <button class="theme-btn" data-theme="theme-red">Red</button>
+            <button class="theme-btn" data-theme="theme-orange">Orange</button>
+            <button class="theme-btn" data-theme="theme-mono">Mono</button>
+            <button class="theme-btn" data-theme="theme-cyber">Cyber</button>
+            <button class="theme-btn" data-theme="theme-sunset">Sunset</button>
+            <button class="theme-btn" data-theme="theme-mint">Mint</button>
+            <button class="theme-btn" data-theme="theme-rose">Rose</button>
+            <button class="theme-btn" data-theme="theme-night">Night</button>
+          </div>
+        </div>
+      </div>
+      <!-- add sound for real imitation -->
+      <audio
+        class="music"
+        src="/assets/aniplex-audio.mp3"
+        preload="auto"
+      ></audio>
+    </div>
+  </body>
+</html>
+<!-- list all the audio attributes -->
+<!--
+  - preload: Specifies if and how the audio should be preloaded when the page loads.
+  - loop: Indicates that the audio will start over again, every time it is finished.
+  - autoplay: Indicates that the audio will start playing as soon as it is ready.
+  - controls: Displays audio controls like play, pause, and volume.
+  - muted: Mutes the audio.
+  - volume: Sets the initial volume of the audio.
+ list all the audio attributes -->
